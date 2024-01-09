@@ -17,7 +17,7 @@ export default function Home() {
         <Fragment>
             <Header />
             <section>
-                <div className='min-h-screen max-w-maxi mx-auto'>
+                <div className='min-h-screen max-w-maxi mx-auto px-[calc(4%_+_8px)]'>
                     <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight py-2'>Home</h3>
                     <div>
                         <Component />
