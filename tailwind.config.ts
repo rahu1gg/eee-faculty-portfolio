@@ -68,7 +68,7 @@ const config = {
                 'accordion-up': 'accordion-up 0.2s ease-out',
             },
             maxWidth: {
-                maxi: '1580px',
+                maxi: '1460px',
             },
             minHeight: {
                 hvh: 'calc(100vh - 60px)',
