@@ -11,7 +11,7 @@ export const Portfolio = defineDocumentType(() => ({
         rest: { type: 'string', required: true },
     },
     computedFields: {
-        url: { type: 'string', resolve: (section) => `/portfolio/${section._raw.flattenedPath}` },
+        url: { type: 'string', resolve: (section) => `/${section._raw.flattenedPath}` },
     },
 }));
 
