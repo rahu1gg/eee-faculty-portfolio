@@ -12,14 +12,16 @@ export default function Header() {
                 </div>
             </header>
             <nav className='fixed w-screen bottom-5 left-0 flex items-center justify-center'>
-                <ul className='flex items-center justify-center gap-5 bg-muted px-4 py-2 rounded-lg'>
-                    {allPortfolios.map((section) => (
-                        <li key={section._id}>
-                            <Link href={section.url}>
-                                <NavLink href={section.url}>{section.label}</NavLink>
-                            </Link>
-                        </li>
-                    ))}
+                <ul className='flex items-center justify-center gap-2 bg-muted h-10 px-1 rounded-lg'>
+                    {allPortfolios
+                        .sort((a, b) => a.index - b.index)
+                        .map((section) => (
+                            <li key={section._id}>
+                                <Link href={section.href ?? section.url} className='text-sm font-medium'>
+                                    <NavLink href={section.href ?? section.url}>{section.label}</NavLink>
+                                </Link>
+                            </li>
+                        ))}
                 </ul>
             </nav>
         </Fragment>
