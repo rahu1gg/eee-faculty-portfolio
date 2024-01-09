@@ -7,6 +7,7 @@ export const Portfolio = defineDocumentType(() => ({
         label: { type: 'string', required: true },
         index: { type: 'number', required: true },
         href: { type: 'string', required: false },
+        rest: { type: 'string', required: true },
     },
     computedFields: {
         url: { type: 'string', resolve: (section) => `/portfolio/${section._raw.flattenedPath}` },
