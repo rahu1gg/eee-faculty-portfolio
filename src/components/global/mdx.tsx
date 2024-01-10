@@ -24,7 +24,7 @@ const components = {
         <h6 className={cn('my-2 scroll-m-20 text-base font-semibold tracking-tight', className)} {...props} />
     ),
     a: ({ className, ...props }: ComponentPropsWithoutRef<'a'>) => (
-        <a className={cn('font-medium underline underline-offset-4', className)} {...props} />
+        <a className={cn('font-medium underline underline-offset-4 hover:text-muted-foreground duration-200', className)} {...props} />
     ),
     p: ({ className, ...props }: ComponentPropsWithoutRef<'p'>) => <p className={cn('leading-7', className)} {...props} />,
     ul: ({ className, ...props }: ComponentPropsWithoutRef<'ul'>) => <ul className={cn('my-4 ml-5 list-disc', className)} {...props} />,
