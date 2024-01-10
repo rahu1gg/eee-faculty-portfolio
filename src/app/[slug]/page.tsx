@@ -9,6 +9,19 @@ import { Fragment } from 'react';
 
 type PageProps = { params: { slug: string } };
 
+export function generateMetadata({ params }: PageProps) {
+    const portfolioSection = getPortfolioSection(params.slug);
+
+    if (!portfolioSection)
+        return {
+            title: 'Not Found',
+        };
+
+    return {
+        title: portfolioSection.label,
+    };
+}
+
 export default function page({ params }: PageProps) {
     const portfolioSection = getPortfolioSection(params.slug);
 

@@ -3,8 +3,13 @@ import Header from '@/components/global/header';
 import { Mdx } from '@/components/global/mdx';
 import { HOME_SECTION_INDEX } from '@/constants/app';
 import { allPortfolios } from 'contentlayer/generated';
+import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Fragment } from 'react';
+
+export const metadata: Metadata = {
+    title: 'Chandrasekhar - Home',
+};
 
 export default function Home() {
     const homeSection = allPortfolios.find((section) => section.index === HOME_SECTION_INDEX);
