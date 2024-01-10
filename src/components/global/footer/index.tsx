@@ -4,7 +4,7 @@ import Link from 'next/link';
 export default function Footer() {
     return (
         <footer className='border-t border-dashed'>
-            <div className='max-w-maxi mx-auto px-[4%] py-6'>
+            <div className='max-w-maxi mx-auto px-[4%] py-3'>
                 <div className='flex items-center justify-between'>
                     <p className='text-muted-foreground text-sm'>
                         <span className='font-medium'>Dr. J.N. Chandrasekhar</span> (Assistant Professor)
