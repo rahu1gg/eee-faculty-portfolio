@@ -1,5 +1,5 @@
 import Footer from '@/components/global/footer';
-import Header from '@/components/global/header';
+import Header, { Navigation } from '@/components/global/header';
 import { Mdx } from '@/components/global/mdx';
 import { HOME_SECTION_INDEX } from '@/constants/app';
 import { allPortfolios } from 'contentlayer/generated';
@@ -19,12 +19,15 @@ export default function Home() {
     return (
         <Fragment>
             <Header />
-            <section>
-                <div className='min-h-screen max-w-maxi mx-auto px-[calc(4%_+_8px)]'>
-                    <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight py-2'>Home</h3>
-                    <Mdx section={homeSection} />
-                </div>
-            </section>
+            <main className='relative pb-5'>
+                <section>
+                    <div className='min-h-screen max-w-maxi mx-auto px-[calc(4%_+_8px)]'>
+                        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight py-2'>Home</h3>
+                        <Mdx section={homeSection} />
+                    </div>
+                </section>
+                <Navigation />
+            </main>
             <Footer />
         </Fragment>
     );
