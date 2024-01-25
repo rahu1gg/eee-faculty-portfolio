@@ -71,7 +71,10 @@ const config = {
                 maxi: '1460px',
             },
             minHeight: {
-                hvh: 'calc(100vh - 60px)',
+                hvh: 'calc(100vh - 40px)',
+            },
+            height: {
+                hvh: 'calc(100vh - 40px)',
             },
         },
     },

@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 export default function Header() {
     return (
-        <header className='sticky top-5 m-5 h-[calc(100vh_-_40px)] rounded-lg'>
+        <header className='sticky top-5 m-5 h-hvh rounded-lg'>
             <div className='border-r h-full flex flex-col items-start pl-1 justify-between'>
                 <div>
                     <Link href='/' className='text-sm font-bold'>
