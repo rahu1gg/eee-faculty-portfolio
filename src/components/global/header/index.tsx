@@ -13,12 +13,12 @@ export default function Header() {
                     </Link>
                 </div>
                 <nav className='w-full'>
-                    <ul className='space-y-0.5 w-'>
+                    <ul>
                         {allPortfolios
                             .sort((a, b) => a.index - b.index)
                             .map((section) => (
                                 <li key={section._id}>
-                                    <Link href={section.href ?? section.url} className='text-sm w-full inline-block'>
+                                    <Link href={section.href ?? section.url} className='group text-sm w-full inline-block py-0.5'>
                                         <NavLink href={section.href ?? section.url}>{section.label}</NavLink>
                                     </Link>
                                 </li>
