@@ -10,8 +10,8 @@ export function NavLink({ href, children }: { href: string; children: ReactNode 
     return (
         <span
             className={cn(
-                pathname === href ? 'header-gradient' : 'hover:bg-background',
-                'h-8 px-2 inline-flex rounded-md items-center justify-center duration-300',
+                pathname === href ? 'text-foreground font-medium' : 'text-muted-foreground font-normal',
+                'w-full inline-block duration-300 hover:text-foreground hover:font-medium',
             )}
         >
             {children}

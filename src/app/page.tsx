@@ -1,5 +1,4 @@
-import Footer from '@/components/global/footer';
-import Header, { Navigation } from '@/components/global/header';
+import Header from '@/components/global/header';
 import { Mdx } from '@/components/global/mdx';
 import { HOME_SECTION_INDEX } from '@/constants/app';
 import { allPortfolios } from 'contentlayer/generated';
@@ -26,9 +25,7 @@ export default function Home() {
                         <Mdx section={homeSection} />
                     </div>
                 </section>
-                <Navigation />
             </main>
-            <Footer />
         </Fragment>
     );
 }

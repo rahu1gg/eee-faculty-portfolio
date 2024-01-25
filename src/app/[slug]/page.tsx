@@ -1,5 +1,5 @@
 import Footer from '@/components/global/footer';
-import Header, { Navigation } from '@/components/global/header';
+import Header from '@/components/global/header';
 import { Mdx } from '@/components/global/mdx';
 import { getPortfolioSection } from '@/components/pages/portfolio-section';
 import { HOME_SECTION_INDEX } from '@/constants/app';
@@ -39,7 +39,6 @@ export default function page({ params }: PageProps) {
                         </div>
                     </div>
                 </section>
-                <Navigation />
             </main>
             <Footer />
         </Fragment>
