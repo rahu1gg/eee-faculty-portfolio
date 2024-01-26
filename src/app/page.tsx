@@ -18,10 +18,10 @@ export default function Home() {
     return (
         <Fragment>
             <Header />
-            <main className='relative pb-5'>
+            <main className='my-5 mr-5 ml-2 pb-5'>
                 <section>
-                    <div className='min-h-screen max-w-maxi mx-auto px-[calc(4%_+_8px)]'>
-                        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight py-2'>Home</h3>
+                    <div className='min-h-hvh'>
+                        <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight pb-2'>Home</h3>
                         <Mdx section={homeSection} />
                     </div>
                 </section>
