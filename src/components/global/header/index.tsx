@@ -6,9 +6,9 @@ import Link from 'next/link';
 export default function Header() {
     return (
         <header className='sticky top-5 m-5 h-hvh rounded-lg'>
-            <div className='border-r h-full flex flex-col items-start pl-1 justify-between'>
+            <div className='relative border-r h-full flex flex-col items-start p-5 justify-between bg-[#e5fa6c] rounded-lg overflow-hidden'>
                 <div>
-                    <Link href='/' className='text-sm font-bold'>
+                    <Link href='/' className='text-sm font-bold relative -top-1'>
                         {PORTFOLIO.name}
                     </Link>
                 </div>

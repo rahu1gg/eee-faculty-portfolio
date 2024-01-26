@@ -3,7 +3,7 @@
 import { cn } from '@/lib/utils/cn';
 import { ArrowUpRight } from 'lucide-react';
 import { usePathname } from 'next/navigation';
-import { ReactNode } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 
 export function NavLink({ href, children }: { href: string; children: ReactNode }) {
     const pathname = usePathname();
@@ -28,4 +28,22 @@ export function NavLink({ href, children }: { href: string; children: ReactNode 
             )}
         </span>
     );
+}
+
+export function GrainyBg() {
+    const [transform, setTransform] = useState('translateX(25%) translateY(25%)');
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            const x = Math.floor(-Math.random() * 50);
+            const y = Math.floor(-Math.random() * 50);
+
+            setTransform(`translateX(${x}%) translateY(${y}%)`);
+            console.log(x, y);
+        }, 100);
+
+        return () => clearInterval(interval);
+    }, []);
+
+    return <div style={{ transform }} className='absolute -inset-[200%] size-[400%] bg-[url(/ui/grainy-texture.png)] opacity-[0.05]' />;
 }
