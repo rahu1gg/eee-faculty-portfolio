@@ -7,6 +7,10 @@ export const PORTFOLIO = {
     },
     role: 'Role',
     college: 'College name',
+    title: {
+        template: 'Name',
+        default: 'Name',
+    },
     socialLinks: [
         {
             icon: 'linkedin.svg',

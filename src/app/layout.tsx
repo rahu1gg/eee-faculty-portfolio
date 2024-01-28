@@ -1,3 +1,4 @@
+import { PORTFOLIO } from '@/constants/portfolio';
 import '@/styles/main.scss';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
@@ -6,8 +7,8 @@ const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
     title: {
-        template: 'Chandrasekhar - %s',
-        default: 'Chandrasekhar',
+        template: `${PORTFOLIO.title.template} - %s`,
+        default: PORTFOLIO.title.default,
     },
     description: 'Official portfolio of Faculty-name',
 };

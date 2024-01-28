@@ -2,13 +2,14 @@ import Header from '@/components/global/header';
 import { Mdx } from '@/components/global/mdx';
 import { HeroSection } from '@/components/pages/portfolio-section';
 import { HOME_SECTION_INDEX } from '@/constants/app';
+import { PORTFOLIO } from '@/constants/portfolio';
 import { allPortfolios } from 'contentlayer/generated';
 import { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import { Fragment } from 'react';
 
 export const metadata: Metadata = {
-    title: 'Chandrasekhar - Home',
+    title: `${PORTFOLIO.title.template} - Home`,
 };
 
 export default function Home() {
