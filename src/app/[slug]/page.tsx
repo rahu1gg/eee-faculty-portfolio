@@ -32,7 +32,7 @@ export default function page({ params }: PageProps) {
             <Header />
             <main className='relative pb-5'>
                 <section>
-                    <div className='min-h-screen max-w-maxi mx-auto px-[calc(4%_+_8px)]'>
+                    <div className='min-h-screen pb-5 my-5 mr-5'>
                         <h3 className='scroll-m-20 text-2xl font-semibold tracking-tight py-2 capitalize'>{portfolioSection?.label}</h3>
                         <div>
                             <Mdx section={portfolioSection} />
