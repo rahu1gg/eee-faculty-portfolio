@@ -5,9 +5,11 @@ export const PORTFOLIO = {
         src: 'profile-pic.jpg',
         alt: 'profile-pic',
     },
+    role: 'Role',
+    college: 'College name',
     socialLinks: [
         {
-            icon: 'linkedin.png',
+            icon: 'linkedin.svg',
             label: 'Linkedin',
             href: '/',
         },

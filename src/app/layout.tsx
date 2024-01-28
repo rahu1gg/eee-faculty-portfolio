@@ -9,7 +9,7 @@ export const metadata: Metadata = {
         template: 'Chandrasekhar - %s',
         default: 'Chandrasekhar',
     },
-    description: 'Official portfolio of Dr. J.N. Chandrasekhar',
+    description: 'Official portfolio of Faculty-name',
 };
 
 export default function RootLayout({
