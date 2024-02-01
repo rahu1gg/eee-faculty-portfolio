@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
     return (
         <html lang='en'>
-            <body className={`${inter.className} grid grid-cols-[400px_1fr]`}>{children}</body>
+            <body className={`${inter.className} lg:grid lg:grid-cols-[380px_1fr]`}>{children}</body>
         </html>
     );
 }

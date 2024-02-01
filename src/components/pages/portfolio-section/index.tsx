@@ -13,8 +13,8 @@ export function getPortfolioSection(slug: string) {
 
 export function HeroSection() {
     return (
-        <div className='min-h-hvh flex items-stretch justify-center'>
-            <div className='w-full pr-5 border-r border-[#e5fa6c] flex justify-between flex-col'>
+        <div className='min-h-hvh grid lg:grid-cols-[1fr_300px] xl:grid-cols-[1fr_320px] 2xl:grid-cols-[1fr_400px] gap-5'>
+            <div className='w-full lg:pr-5 lg:border-r lg:border-[#e5fa6c] flex justify-between flex-col'>
                 <div className='text-end'>
                     <div>
                         <Image
@@ -28,11 +28,11 @@ export function HeroSection() {
                         />
                     </div>
                 </div>
-                <h2 className='uppercase text-8xl font-bold bg-gradient-to-tr from-foreground to-muted-foreground w-max bg-clip-text text-transparent'>
+                <h2 className='uppercase text-5xl lg:text-5xl xl:text-7xl 2xl:text-8xl font-bold bg-gradient-to-tr from-foreground to-muted-foreground w-max bg-clip-text text-transparent'>
                     Portfolio
                 </h2>
             </div>
-            <div className='text-sm text-muted-foreground w-[400px] pl-5 space-y-2'>
+            <div className='text-sm text-muted-foreground space-y-2'>
                 <p>{PORTFOLIO.name}</p>
                 <p>{PORTFOLIO.role}</p>
                 <p>{PORTFOLIO.college}</p>

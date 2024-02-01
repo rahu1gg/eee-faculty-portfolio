@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <Fragment>
             <Header />
-            <main className='my-5 mr-5 ml-2 pb-5'>
+            <main className='my-5 mr-5 ml-5 lg:ml-2 pb-5'>
                 <section>
                     <HeroSection />
                 </section>
