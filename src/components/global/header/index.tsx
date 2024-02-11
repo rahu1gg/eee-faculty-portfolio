@@ -56,7 +56,7 @@ function HeaderNav() {
                     <Link key={`${index}`} href={href} className='grayscale scale-100 hover:grayscale-0 hover:scale-105 duration-300'>
                         <Image
                             src={`/portfolio/social-links/${icon}`}
-                            className='size-6'
+                            className='size-8'
                             width={20}
                             height={20}
                             alt={label}

@@ -1,41 +1,41 @@
 // Portfolio
 export const PORTFOLIO = {
-    name: 'Name',
-    profilePic: {
-        src: 'profile-pic.jpg',
-        alt: 'profile-pic',
+  name: 'Dr. J.N. Chandra Sekhar',
+  profilePic: {
+    src: 'profile-pic.jpg',
+    alt: 'profile-pic',
+  },
+  role: 'Assistant Professor',
+  college: 'Department of Electrical and Electronics Engineering\nSri Venkateswara University\nTirupati',
+  title: {
+    template: 'Dr. J.N. Chandra Sekhar',
+    default: 'Dr. J.N. Chandra Sekhar',
+  },
+  socialLinks: [
+    {
+      icon: 'linkedin.svg',
+      label: 'Linkedin',
+      href: '/',
     },
-    role: 'Role',
-    college: 'College name',
-    title: {
-        template: 'Name',
-        default: 'Name',
+    {
+      icon: 'webofscience.svg',
+      label: 'webofscience',
+      href: '/',
     },
-    socialLinks: [
-        {
-            icon: 'linkedin.svg',
-            label: 'Linkedin',
-            href: '/',
-        },
-        {
-            icon: 'webofscience.svg',
-            label: 'webofscience',
-            href: '/',
-        },
-        {
-            icon: 'researchgate.svg',
-            label: 'Researchgate',
-            href: '/',
-        },
-        {
-            icon: 'scopus.svg',
-            label: 'scopus',
-            href: '/',
-        },
-        {
-            icon: 'google-scholar.svg',
-            label: 'Googlescholar',
-            href: '/',
-        },
-    ],
+    {
+      icon: 'researchgate.svg',
+      label: 'Researchgate',
+      href: '/',
+    },
+    {
+      icon: 'scopus.svg',
+      label: 'scopus',
+      href: '/',
+    },
+    {
+      icon: 'google-scholar.svg',
+      label: 'Googlescholar',
+      href: '/',
+    },
+  ],
 } as const;
